@@ -62,7 +62,6 @@ p {
 
 }
 
-
 .header_list_item:before {
     width: 25px;
     height: 19px;
@@ -94,42 +93,51 @@ p {
 }
 
 .block_about {
-    width: 100%;
-    height: 345px;
-    display: flex;
-    
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
+    width: 1280px;
+    min-height: 350px;
+    background-color: #fff;
     
 }
 
-.about_wrapper {
-    width: 50%;
-    max-height: 345px;
-    padding-bottom: 50px;
-}
 
-.about_title {    
-    width: 254px;
-    height: 28px;
+.about_title {
     color: #445161;
     font-family: "Arial MT";
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
-    margin-left: 0;
-    padding: 0;
-    text-align: start;    
+    text-align: left;
+    display: block;
+    padding: 50px 0 30px 50px;
+    margin: 0 auto;
+
 }
 
-.video_about {
-    width: 430px;
-    height: 245px;
-    margin-left: 97px;   
+.about_wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 50px;
 
+}
+
+.about_text {
+    width: 48%;
+    box-sizing: border-box;
+
+}
+
+.about_video {
+    width: 350px;
+    height: 350px;
+}
+
+.video_one {
+    width: 250px;
+    height: 300px;
+    
 }
 
 
@@ -254,6 +262,7 @@ h3 {
     justify-content: space-between;
     box-sizing: border-box;
     padding: 0 50px;
+    padding-bottom: 30px;
     
 }
 
@@ -266,7 +275,8 @@ h3 {
 }
 
 .review_photo {
-    padding: 15px 30px 35px 0;
+    margin-right: 30px;
+    margin-bottom: 60px;
 }
 
 .reviews_item_text {
@@ -309,5 +319,305 @@ h3 {
     width: 100%;
     min-height: 656px;
     background-color: #fff;
+}
+
+.buy_wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-sizing: border-box;
+    padding: 0 100px;
+    padding-bottom: 50px;
+    
+}
+
+.buy_card {
+    width: 299px;
+    border: 1px solid  #445162;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;    
+    background-color: #445162;
+    border-radius: 10px;
+    box-sizing: content-box;
+}
+
+.card_title {
+    width: 100%;
+    color: #ffffff;
+    font-family: "Arial MT";
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-align: center;
+    padding: 15px 0;
+
+}
+
+.card_price {
+    width: 100%;
+    color: #445162;
+    font-family: "Arial MT";
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #fff;
+}
+
+.card_list {
+    
+    color: #ffffff;
+    font-family: "Arial MT";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: left;
+    padding: 20px 20px;
+    margin: 0 15px;
+
+}
+
+.price_btn {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1,#cecece) );
+	background: -moz-linear-gradient( center top, #ffffff 5%,#cecece 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#cecece');
+	background-color: #ffffff;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+    text-indent:0;
+	border: 1px solid #dcdcdc;
+	display: inline-block;
+	color : #666666;
+	font-family: arial;
+	font-size: 18px;
+	font-weight: bold;
+	font-style: normal;
+    height: 40px;
+	line-height: 40px;
+    width: 260px;
+	text-decoration: none;
+    text-align: center;
+    margin: 19px 19px;
+    
+}
+
+.price_btn:hover {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05,#cecece), color-stop(1, #ffffff) );
+	background: -moz-linear-gradient( center top,#cecece 5%, #ffffff 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cecece', endColorstr='#ffffff');
+	background-color:#cecece#e6e6e6;
+}
+
+.price_btn:active {
+	position: relative;
+	top: 1px;
+}
+
+.footer {
+    width: 1280px;
+    height: 510px;
+    background-color: #445162;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.footer_title {
+    color: #fff;
+}
+
+.footer_wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 250px;
+    padding-bottom: 50px;
+
+}
+
+.footer_form {
+    width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    margin: 0;
+    
+}
+
+.footer_form input[type="text"], .footer_form input[type="email"], .footer_form textarea {
+    width: 100%;
+    height: 40px;
+    margin: 0 0 20px 0;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color:  #ffffff;
+    outline: none;
+    
+}
+
+.footer_form textarea {
+    height: 179px;
+    resize: none;
+    
+}
+
+.footer_form input[type="text"]:hover,
+.footer_form input[type="email"]:hover, 
+.footer_form textarea:hover{
+    background-color: #cecece;
+
+}
+
+input[placeholder], textarea[placeholder] {
+    color: #445162;
+    font-family: "Arial MT";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: left;
+
+}
+
+.contact_details {
+    width: 45%;
+
+}
+
+.contact_details_item {
+    width: 100%;
+    color: #ffffff;
+    font-family: "Arial MT";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: left;
+    margin: 0 0 20px 0;
+
+}
+
+.skype::before {
+    content: '';
+    width: 24px;
+    height: 26px;
+    display: inline-block;
+    background-color: #445161;
+    background-image: url(../img/skype_icon.png);
+    position: relative;
+    top: 8px;
+    right: 9px;
+
+}
+
+.icq::before {
+    content: '';
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    background-color: #445161;
+    background-image: url(../img/icq_icon.png);
+    position: relative;
+    top: 8px;
+    right: 9px;
+
+}
+
+.email::before {
+    content: '';
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    background-color: #445161;
+    background-image: url(../img/email_icon.png);
+    position: relative;
+    top: 8px;
+    right: 9px;
+
+}
+
+.phone::before {
+    content: '';
+    width: 24px;
+    height: 23px;
+    display: inline-block;
+    background-color: #445161;
+    background-image: url(../img/phone_icon.png);
+    position: relative;
+    top: 8px;
+    right: 9px;
+
+}
+
+.submit_btn {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1,#cecece) );
+	background: -moz-linear-gradient( center top, #ffffff 5%,#cecece 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#cecece');
+	background-color: #ffffff;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+    text-indent:0;
+	border: 1px solid #dcdcdc;
+	display: inline-block;
+	color : #666666;
+	font-family: arial;
+	font-size: 18px;
+	font-weight: bold;
+	font-style: normal;
+    height: 40px;
+	line-height: 40px;
+    width: 140px;
+	text-decoration: none;
+    text-align: center;   
+    
+}
+
+.submit_btn:hover {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05,#cecece), color-stop(1, #ffffff) );
+	background: -moz-linear-gradient( center top,#cecece 5%, #ffffff 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cecece', endColorstr='#ffffff');
+	background-color:#cecece;
+}
+
+.submit_btn:active {
+	position: relative;
+	top: 1px;
 }
 
